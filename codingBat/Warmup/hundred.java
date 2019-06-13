@@ -6,9 +6,10 @@
 class hundred{
     public static void main(String[] args)
     {
-        System.out.println(nearHundred(5));
+        System.out.println(nearHundred(90));
     }
-    public boolean nearHundred(int n) {
-  
+    public static boolean nearHundred(int n) {
+        if(Math.abs(100-n)<=10||Math.abs(200-n)<=10) return true;
+        else return false;
     }
 }
